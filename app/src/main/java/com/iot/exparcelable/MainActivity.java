@@ -25,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
                 SimpleData simpleData = new SimpleData(etMsg.getText().toString());
                 intent.putExtra("savemsg", simpleData);
                 startActivityForResult(intent, REQUEST_CODE);
-                Toast.makeText(getApplicationContext(), "ㅋㅋㅋ 바보", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "ㅋㅋㅋ 바보zzz", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnRead:
                 tvMsg.setText(receiveMsg);
