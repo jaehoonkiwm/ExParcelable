@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -24,6 +25,7 @@ public class MainActivity extends ActionBarActivity {
                 SimpleData simpleData = new SimpleData(etMsg.getText().toString());
                 intent.putExtra("savemsg", simpleData);
                 startActivityForResult(intent, REQUEST_CODE);
+                Toast.makeText(getApplicationContext(), "ㅋㅋㅋ 바보", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnRead:
                 tvMsg.setText(receiveMsg);
